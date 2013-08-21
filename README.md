@@ -23,3 +23,10 @@ Clone this repository and build, install yourself.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+6. 
+## TODO
+
+1. Customizable install path
+2. Customizable fetch result pattern. ex `"#{title} #{url} #{description}"`
+3. Support more editors, preferbaly `$EDITOR`
+4. Customizable send endpoints.
