@@ -4,6 +4,8 @@ This is a tool of sharing links to twitter from command line.
 
 It will grab title and decription from url, send them into vim. After editing, tweet will be sent via gem `t`. So make sure you've set `t` correctly.
 
+See it in action: http://ascii.io/a/5072
+
 ## Installation
 
 Clone this repository and build, install yourself.
