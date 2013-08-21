@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# TODO: Figure out if vim quit without saving
+
+if [ -z "$1" ]
+then
+    echo "Usage: share_link <url>"
+    exit -1
+fi
+
+fetch_url $1 > ~/.share_link
+vim ~/.share_link "+set colorcolumn=140"
+t update "`cat ~/.share_link`"
+rm ~/.share_link

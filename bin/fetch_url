@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require "bundler/setup"
+require 'metainspector'
+
+url = ARGV[0]
+abort "no url specified!" unless url
+
+page = MetaInspector.new url
+
+message = "#{page.title} #{page.url} #{page.description}"
+
+#puts message[0..135]
+puts message
